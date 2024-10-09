@@ -1,0 +1,47 @@
+.herocontainer{
+    &>div{
+        max-width: 1200px;
+    margin:0 auto;
+    text-align: center;
+    padding-bottom: 150px;
+    overflow: hidden;
+    position: relative;
+
+    &:after{
+        content: '';
+        background: #fff;
+        height:600px;
+        width:600px;
+        display: block;
+        border:0;
+        position: absolute;
+        border-radius: 100%;
+        left:calc(50% - 300px);
+        bottom:-450px;
+        z-index: 9;
+        box-shadow: 0 0px 107px 7px #fff;
+    }
+    
+    }
+    .imgcontainer{text-align: center; padding: 50px 0 0;}
+    img{clear:both; display: inline-block;}
+
+    p{margin-top: 50px; margin-bottom: 50px; color:#fff; line-height: 30px;}
+    
+    background:#338ecc;
+
+    button{
+        margin-top: 50px;
+        background-color: rgb(51, 134, 199);
+        border-radius: 20px;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        color:#fff;
+        border:0;
+        position: absolute;
+        z-index: 999; 
+        left:calc(50% - 100px);
+        bottom: 50px;
+    }
+
+}
