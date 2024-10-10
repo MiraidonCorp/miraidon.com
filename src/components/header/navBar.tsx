@@ -2,7 +2,7 @@ import * as React from "react"
 import { useState, useEffect } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import AniLink from "gatsby-plugin-transition-link/AniLink";
-import logo from "../../images/logo.png";
+import logo from "../../images/miraidon.png";
 import SearchForm from "./SearchForm";
 import DrawerNav from "./DrawerNav";
 
