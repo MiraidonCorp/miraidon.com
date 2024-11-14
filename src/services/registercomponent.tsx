@@ -10,6 +10,7 @@ import CardsGrid from "../components/cardsGrid/cardsGrid";
 import Container from "../components/container/container";
 import ImageText from "../components/imageText/imageText";
 import Banner from "../components/banner/banner";
+import ImageFeatureList from "../components/imageFeatureList/imageFeatureList";
 
 
 const mapComponent = {
@@ -21,7 +22,8 @@ const mapComponent = {
     "ContentfulImage": Image,
     "ContentfulContainer": Container,
     "ContentfulImageText" : ImageText,
-    "ContentfulBanner": Banner
+    "ContentfulBanner": Banner,
+    "ContentfulImageFeatureList": ImageFeatureList
 }
 
 const mapTo = (data) => {

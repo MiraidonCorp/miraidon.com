@@ -15,7 +15,7 @@ const Page = (props) => {
 }
 
 export const query = graphql`
-   query PageQuery($slug: String) {
+query PageQuery($slug: String) {
   contentfulPage(slug: {eq: $slug}) {
     pageTitle
     slug
@@ -120,12 +120,40 @@ export const query = graphql`
           }
         }
         cta {
-           ... on ContentfulLink {
-              id
-              label
-              url
-              customCssClass
+          ... on ContentfulLink {
+            id
+            label
+            url
+            customCssClass
+          }
+        }
+      }
+      ... on ContentfulImageFeatureList {
+        component: __typename
+        layout
+        featureListTitle: title
+        subTitle
+        customCssClass
+        description {
+          raw
+        }
+        image {
+          customCssClass
+          image {
+            url
+          }
+        }
+        featuresList {
+          ... on ContentfulTeaser {
+            title {
+              raw
             }
+            description {
+              raw
+            }
+            iconClass
+            customCssClass
+          }
         }
       }
     }
