@@ -42,7 +42,12 @@ module.exports = {
     "gatsby-plugin-vanilla-extract",
     "gatsby-plugin-mdx",
     "gatsby-transformer-json",
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

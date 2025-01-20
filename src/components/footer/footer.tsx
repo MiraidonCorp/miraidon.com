@@ -1,6 +1,6 @@
 import * as React from "react"
 import {useStaticQuery, graphql} from "gatsby";
-import logo from "../../images/white-logo.png";
+import logo from "../../images/miraidon-white.png";
 import { Link } from "gatsby";
 
 export default function Footer() {
@@ -23,9 +23,8 @@ export default function Footer() {
 
     return (
         <>
-            <div className="footer-area">
+            <div className="footer-area pt-100 pb-75 bg-black">
                 <div className="container-fluid">
-                    <div className="bg-black pt-100 pb-75">
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-lg-3 col-sm-6 col-md-6">
@@ -38,9 +37,7 @@ export default function Footer() {
                                         </Link>
 
                                         <p>
-                                            Lorem ipsum dolor sit amet
-                                            consectetur. Sed amet eget gravida
-                                            nec tortor.
+                                            Artisans of digital experiences, crafting whats next.
                                         </p>
                                         <ul className="social-links list-unstyled mb-0">
                                             <li>
@@ -90,8 +87,8 @@ export default function Footer() {
                                                 <Link to="/">Home</Link>
                                             </li>
                                             <li>
-                                                <Link to="/projects">
-                                                    Projects
+                                                <Link to="/academy">
+                                                    Academy
                                                 </Link>
                                             </li>
                                             <li>
@@ -138,40 +135,31 @@ export default function Footer() {
                                         <ul className="footer-contact-info">
                                             <li>
                                                 <i className="bx bx-envelope"></i>
-                                                <a href="mailto:hello@doji.com">
-                                                    hello@doji.com
+                                                <a href="mailto:hello@miraidon.com">
+                                                    hello@miraidon.com
                                                 </a>
                                             </li>
                                             <li>
                                                 <i className="bx bx-phone-call"></i>
-                                                <a href="tel:+2414524526">
-                                                    +241 452 4526
+                                                <a href="tel:+xxxxxxxx">
+                                                    +xxx xxx xxxx
                                                 </a>
                                             </li>
                                             <li>
                                                 <i className="bx bx-map"></i>
-                                                2750 Quadra Street Victoria
-                                                Road, New York, USA
+                                                Whitby, Ontario, Canada
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
             <div className="copyright-area text-center">
                 <div className="container">
                     <p>
-                        © Doji is Proudly Owned by{" "}
-                        <a
-                            href="https://envytheme.com/"
-                            rel="noreferrer"
-                            target="_blank"
-                        >
-                            EnvyTheme
-                        </a>
+                        © 2024 Miraidon Corp. All Rights Reserved.
                     </p>
                 </div>
             </div>
